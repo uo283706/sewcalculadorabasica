@@ -73,13 +73,13 @@ input[type=button]  {
 /*Selector Specificity: (0, 2, 1)*/
 input[type=button][ value = "/"]{
     background-color: aqua;
-    color:white;
+    color:black;
 }
 
 /*Selector Specificity: (0, 2, 1)*/
 input[type=button][ value = "*"]{
     background-color: aqua;
-    color:white;
+    color:black;
 }
 
 /*Selector Specificity: (0, 2, 1)*/
@@ -87,61 +87,61 @@ input[type=button][ value = "+"]{
     height: auto;
     grid-row: span 2;
     background-color: aqua;
-    color:white;
+    color:black;
 }
 
 /*Selector Specificity: (0, 2, 1)*/
 input[type=button][ value = "-"]{
     background-color: aqua;
-    color:white;
+    color:black;
 }
 
 /*Selector Specificity: (0, 2, 1)*/
 input[type=button][ value = "MRC"]{
     background-color: aqua;
-    color:white;
+    color:black;
 }
 
 /*Selector Specificity: (0, 2, 1)*/
 input[type=button][ value = "M-"]{
     background-color: aqua;
-    color:white;
+    color:black;
 }
 
 /*Selector Specificity: (0, 2, 1)*/
 input[type=button][ value = "M+"]{
     background-color: aqua;
-    color:white;
+    color:black;
 }
 
 /*Selector Specificity: (0, 2, 1)*/
 input[type=button][ value = "%"]{
     background-color: aqua;
-    color:white;
+    color:black;
 }
 
 /*Selector Specificity: (0, 2, 1)*/
 input[type=button][ value = "+-"]{
     background-color: aqua;
-    color:white;
+    color:black;
 }
 
 /*Selector Specificity: (0, 2, 1)*/
 input[type=button][ value = "C"]{
     background-color: aqua;
-    color:white;
+    color:black;
 }
 
 /*Selector Specificity: (0, 2, 1)*/
 input[type=button][ value = "CE"]{
     background-color: aqua;
-    color:white;
+    color:black;
 }
 
 /*Selector Specificity: (0, 2, 1)*/
 input[type=button][ value = "√"]{
     background-color: aqua;
-    color:white;
+    color:black;
 }
 
 /*Selector Specificity: (0, 1, 1)*/
