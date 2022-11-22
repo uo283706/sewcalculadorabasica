@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!--Datos que describen el documento-->
+    <meta charset="UTF-8">
+    <!--Metadatos de los documentos HTML5-->
+    <meta name ="author" content ="Sara Lamuño" >
+    <meta name ="description" content ="Página principal de la calculadora" >
+    <meta name ="keywords" content ="Calculadora, más, menos, por,entre" >
+
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" >
+
+    <script src = "CalculadoraMilan.js" ></script>
+
+    <title>Calculadora Milán</title>
+    <!--Añadir el elemento link de enlace a la hoja de estilo dento del <head> del documento html-->
+   
+    <link rel="stylesheet" type="text/css" href="CalculadoraMilan.css">
+
+</head>
+<body>
+    
+    <h1>Calculadora Milán</h1>
+        <form>
+
+            <label for="pantalla">nata by MILAN</label>
+            <input type="text" name="pantalla" id="pantalla" value="0" lang="es" disabled>
+            <!--Primera fila de botones-->
+            <input type="button" value="C" onclick="calculadoraM.borrar()" />
+            <input type="button" value="CE" onclick="calculadoraM.CE()" />
+            <input type="button" value="+-" onclick="calculadoraM.masmenos()" />
+            <input type="button" value="√" onclick="calculadoraM.raíz()" />
+            <input type="button" value="%" onclick="calculadoraM.porcentaje()" />
+            
+            <!--Segunda fila de botones-->
+            <input type="button" value="7" onclick="calculadoraM.dígitos(7)" />
+            <input type="button" value="8" onclick="calculadoraM.dígitos(8)" />
+            <input type="button" value="9" onclick="calculadoraM.dígitos(9)" />
+            <input type="button" value="*" onclick="calculadoraM.operación('*')" />
+            <input type="button" value="/" onclick="calculadoraM.operación('/')" />
+            <!--Tercera fila de botones-->
+            <input type="button" value="4" onclick="calculadoraM.dígitos(4)" />
+            <input type="button" value="5" onclick="calculadoraM.dígitos(5)" />
+            <input type="button" value="6" onclick="calculadoraM.dígitos(6)" />
+            <input type="button" value="-" onclick="calculadoraM.operación('-')" />
+            <input type="button" value="MRC" onclick="calculadoraM.mrc()" />
+            <!--Cuarta fila de botones-->
+            <input type="button" value="1" onclick="calculadoraM.dígitos(1)" />
+            <input type="button" value="2" onclick="calculadoraM.dígitos(2)" />
+            <input type="button" value="3" onclick="calculadoraM.dígitos(3)" />
+            <input type="button" value="+" onclick="calculadoraM.operación('+')" />
+            <input type="button" value="M-" onclick="calculadoraM.mMinus()" />
+            <!--Quinta fila de botones-->
+            <input type="button" value="0" onclick="calculadoraM.dígitos(0)" />
+            <input type="button" value="." onclick="calculadoraM.dígitos('.')" />
+            <input type="button" value="=" onclick="calculadoraM.equals()" />
+            <input type="button" value="M+" onclick="calculadoraM.mMas()" />
+            
+           
+
+            
+           
+           
+            
+
+
+            <input type="submit" value="submit"  />
+        </form>
+    
+
+
+</body> 

@@ -29,7 +29,7 @@ class CalculadoraMilan{
             }
         }else { 
                if (xx=="." && this.coma==0) { 
-                document.querySelector('input[type=text][name=\"pantalla\"]').value+=x;
+                document.querySelector('input[type=text][name=\"pantalla\"]').value+=xx;
                 this.op1+=xx;
                 this.coma=1;
                }else if (xx=="." && this.coma==1) {
@@ -40,6 +40,7 @@ class CalculadoraMilan{
                }
             }
         this.init=0;
+        this.coma = 0;
     }
 
     operación(s) {
@@ -53,7 +54,6 @@ class CalculadoraMilan{
     raíz() {
         this.op1=Math.sqrt(this.op1); 
         document.querySelector('input[type=text][name=\"pantalla\"]').value=this.op1; 
-        this.op="no"; 
         this.init=1; 
     }
 
@@ -69,7 +69,6 @@ class CalculadoraMilan{
     masmenos() {
         this.op1=Number(this.op1) * (-1);
         document.querySelector('input[type=text][name=\"pantalla\"]').value=this.op1;
-        this.op="no";
         this.init=1;
          
      }
@@ -164,13 +163,13 @@ document.addEventListener('keydown', function (event) {
         calculadoraM.masmenos();
     }
     if(event.key === 'r'){
-        calculadoraM.raiz();
+        calculadoraM.raíz();
     }
     if(event.key === 'p'){
         calculadoraM.porcentaje();
     }
-    if(event.key === 's'){
-        calculadoraM.masmenos();
+    if(event.key === '.'){
+        calculadoraM.dígitos('.');
     }
     if(event.key === 'Enter'){
         event.preventDefault();
